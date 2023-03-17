@@ -150,7 +150,7 @@ internal final class DropView: UIView {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textAlignment = .center
-    label.textColor = UIAccessibility.isDarkerSystemColorsEnabled ? .label : .secondaryLabel
+    label.textColor = UIColor(red: 0.35686275362968445, green: 0.3843137323856354, blue: 0.4431372582912445, alpha: 1)
     label.font = UIFont.preferredFont(forTextStyle: .subheadline)
     label.adjustsFontForContentSizeCategory = true
     label.adjustsFontSizeToFitWidth = true
@@ -162,7 +162,7 @@ internal final class DropView: UIView {
     view.translatesAutoresizingMaskIntoConstraints = false
     view.contentMode = .scaleAspectFit
     view.clipsToBounds = true
-    view.tintColor = UIAccessibility.isDarkerSystemColorsEnabled ? .label : .secondaryLabel
+    view.tintColor = UIColor(red: 0.35686275362968445, green: 0.3843137323856354, blue: 0.4431372582912445, alpha: 1)
     return view
   }()
 
@@ -171,7 +171,7 @@ internal final class DropView: UIView {
     button.translatesAutoresizingMaskIntoConstraints = false
     button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     button.clipsToBounds = true
-    button.backgroundColor = .link
+    button.backgroundColor = UIColor(red: 0.22, green: 0.87, blue: 0.94, alpha: 1.00)
     button.tintColor = .white
     button.imageView?.contentMode = .scaleAspectFit
     button.contentEdgeInsets = .init(top: 7.5, left: 7.5, bottom: 7.5, right: 7.5)
