@@ -139,7 +139,7 @@ internal final class DropView: UIView {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textAlignment = .center
-    label.textColor = .label
+	  label.textColor = .black
     label.font = UIFont.preferredFont(forTextStyle: .subheadline).bold
     label.adjustsFontForContentSizeCategory = true
     label.adjustsFontSizeToFitWidth = true
